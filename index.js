@@ -1,0 +1,10 @@
+var date=document.getElementById("date-tag");
+var day=document.getElementById("day");
+var month=document.getElementById("month");
+var year=document.getElementById("year");
+let months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+let weekdays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+let today=new Date();
+date.innerHTML=today.getDate();
+day.innerHTML=weekdays[today.getDay()];
+month.innerHTML=months[today.getMonth()];
